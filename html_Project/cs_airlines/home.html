@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/png" href="./img/img2.png">
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>CS Airlines</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+        <link rel='stylesheet' type='text/css' media='screen' href="main.css">
+        <script src='script.js' defer></script>
+    </head>
+
+    
+<body>
+    <nav class="navbar">
+        <div class="brand-title"><a class="title"  href="home.html"> CS Airlines</a></div>
+        <a class="toggle-button" href="#">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-link">
+
+
+            <ul>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <button class="login-button" type="button" onclick="location.href='login.html'">Login</button>
+            </ul>
+        </div>
+    </nav>
+    <marquee  behavior="scroll" direction="right">
+         <div class="departures" >
+            <tr><td>EZY5359</td><td>Ρώμη</td><td><span id="today"></span></td></tr>
+
+            <tr><td>UX1016</td><td>Μαδρίτη</td><td><span id="today1"></span></td></tr>
+
+            <tr><td>FR117</td><td>Βερολίνο</td><td><span id="today2"></span></td></tr>
+            <tr><td>EZY5225</td><td>Παρίσι</td><td><span id="today3"></span></td></tr>
+            <tr><td>FASADS3417</td><td>Στοκχόλμη</td><td><span id="today4"></span></td></tr>
+            <tr><td>YKN5244</td><td>Μιλάνο</td><td><span id="today5"></span></td></tr>
+            <tr><td>FEAS857</td><td>Αθήνα</td><td><span id="today6"></span></td></tr>
+            <tr><td>EFDS5225</td><td>Νέα Υόρκη</td><td><span id="today7"></span></td></tr>
+
+         </div>  
+    </marquee>
+
+
+    <div class="kratiseis-photo">
+
+         <img src="img\img1.jpg" class="photo">
+    </div>
+
+    <div class="form1">
+		<form class="mycolor6" id="tickets" method="post" action="krastiseis.html">
+			<fieldset><legend>Αγορά εισητηρίου</legend>
+			Απο: <select id="country" name="country">
+				<option>Greece</option>
+				<option>France</option>
+				<option>Germany</option>
+				<option>Italy</option>
+				<option>Netherlands</option>
+				<option>Spain</option>
+				<option>UK</option>
+				</select>
+			<br>
+			Προς: <select id="country" name="country">
+				<option>Greece</option>
+				<option>France</option>
+				<option>Germany</option>
+				<option>Italy</option>
+				<option>Netherlands</option>
+				<option>Spain</option>
+				<option>UK</option>
+				</select>
+			<br>
+			Ημερομηνία αναχώρησης: <input type="date" id="date" name="departure date" required>
+			<br>
+			Ημερομηνία επιστροφής: <input type="date" id="date" name="arrival date" required>
+			<br>
+			Αριθμός επιβατών: <input type="text" id="passengers_number" name="passengers_number" required>
+			<br>
+			<input id="button" type="submit" value="Συνέχεια">
+			<input type="reset" value="Καθαρισμός στοιχείων">
+			</fieldset>
+		</form>
+
+        <iframe class="video" src="video\production ID_4684101.mp4">
+		</iframe>
+    </div>
+
+    <div class="fare">
+
+        <p class="mycolor6">
+			Επιτρεπόμενα όρια αποσκευών στην καμπίνα:
+		</p>
+		<p class="mycolor4">
+			<u>Economy Class</u>
+			<br>
+			<br>
+			Ναύλος Light
+			<br>
+			Μπορείτε να μεταφέρετε στην καμπίνα του αεροσκάφους, ένα (1) τεμάχιο:
+			<br>
+			1 χειραποσκευή, με μέγιστο βάρος 8 κιλά και διαστάσεις 56εκ. x 45εκ. x 25εκ., η οποία θα πρέπει να τοποθετηθεί στο χώρο αποθήκευσης του αεροσκάφους πάνω από τα καθίσματα, ή 1 προσωπικό αντικείμενο (γυναικεία/αντρική τσάντα ή θήκη φορητού υπολογιστή), το οποίο πρέπει να χωρά κάτω από το μπροστινό κάθισμα.
+			<br>
+			Ναύλος Flex
+			<br>
+			Μπορείτε να μεταφέρετε στην καμπίνα του αεροσκάφους, δύο (2) τεμάχια:
+			<br>
+			1 χειραποσκευή, με μέγιστο βάρος 8 κιλά και διαστάσεις 56εκ. x 45εκ. x 25εκ., η οποία θα πρέπει να τοποθετηθεί στο χώρο αποθήκευσης του αεροσκάφους πάνω από τα καθίσματα, και 1 προσωπικό αντικείμενο (γυναικεία/αντρική τσάντα ή θήκη φορητού υπολογιστή), το οποίο πρέπει να χωρά κάτω από το μπροστινό κάθισμα.
+			<br>
+			<br>
+			<u>Business Class</u>
+			<br>
+			<br>
+			Μπορείτε να μεταφέρετε στην καμπίνα του αεροσκάφους, δύο (2) τεμάχια:
+			<br>
+			Ένα προσωπικό αντικείμενο (γυναικεία/αντρική τσάντα ή θήκη φορητού υπολογιστή), το οποίο πρέπει να χωρά κάτω από το μπροστινό κάθισμα και μία χειραποσκευή, με μέγιστο βάρος 13 κιλά και διαστάσεις 56εκ. x 45εκ. x 25εκ., η οποία θα πρέπει να τοποθετηθεί στο χώρο αποθήκευσης του αεροσκάφους πάνω από τα καθίσματα.
+		</p>
+    </div>
+
+    <div class="baggages">
+        <p class="bags-title">
+            Επιτρεπόμενα όρια παραδοτέων αποσκευών:
+        </p>
+        <table class="table-bag">
+            <tr><td>Θέση/ Τύπος Επιβάτη</td><td>Δωρεάν Μεταφορά Αποσκευών</td><td>Διαστάσεις</td></tr>
+            <tr><td>Economy Class Light</td><td>0 τμχ</td><td>N/A</td></tr>
+            <tr><td>Economy Class Flex</td><td>1 τμχ μέχρι 23 κιλά</td><td>158εκ.</td></tr>
+            <tr><td>Business Class</td><td>2 τμχ μέχρι 32 κιλά το καθένα</td><td>158εκ.</td></tr>
+        </table>
+
+    </div>
+
+
+
+    
+</body>
+
+
+
+</html>

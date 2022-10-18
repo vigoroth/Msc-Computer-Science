@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/png" href="./img/img2.png">
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>CS Airlines</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+        <link rel='stylesheet' type='text/css' media='screen' href="main.css">
+        <script src='script.js' defer></script>
+    </head>
+
+    
+<body>
+    <nav class="navbar">
+        <div class="brand-title"><a class="title"  href="home.html"> CS Airlines</a></div>
+        <a class="toggle-button" href="#">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-link">
+
+
+            <ul>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <button class="login-button" type="button" onclick="location.href='login.html'">Login</button>
+            </ul>
+        </div>
+    </nav>
+
+    <section class='ticketbuy'>
+
+        <h1>
+            Αγορά Εισητηρίων
+        </h1>
+        <br>
+        <form class="form1" method="post" action="booking.php" onsubmit="return validation()">
+            <fieldset><legend>Προσωπικά στοιχεία</legend>
+            <p class="p1"><label for="mail">email: </label> <input type="email" id="mail" name="mail" placeholder="xxx@xxx.com/.gr" required></p>
+            <p class="p1"><label for="password">password*: </label> <input type="password" id="password" name="password" placeholder="8 χαρακτήρες και πάνω" required></p>
+            <p class="p1"><label for="firstname">Όνομα:</label> <input type="text" id="firstname" name="firstname" size="20" placeholder="Μόνο λατινικούς χαρακτήρες" required></p>
+            <p class="p1"><label for="lastname">Επώνυμο:</label> <input type="text" id="lastname" name="lastname" size="20" placeholder="Μόνο λατινικούς χαρακτήρες" required></p>
+            <p class="p1"><label for="address">Διεύθυνση κατοικίας: </label><input type="text" id="address" name="address" placeholder="Μόνο λατινικούς χαρακτήρες" required></p>
+            <p class="p1"><label for="country">Χώρα: </label><select id="country" name="country" required>
+            <option>Belgium</option>
+            <option>France</option>
+            <option>Germany</option>
+            <option>Greece</option>
+            <option>Italy</option>			
+            <option>Netherlands</option>
+            <option>Portugal</option>
+            <option>Spain</option>
+            <option>Sweden</option>
+            <option>Switzerland</option>
+            <option>UK</option>
+            <option>US</option>
+            <option>Other</option>
+            </select>
+            </p>
+            <p class="p1"><label for="zip">Ταχυδρομικός Κώδικας: </label><input type="text" id="zip" name="zip" maxlength="5" required></p>
+            <p class="p1"><label for="phone">Αριθμός Τηλεφώνου: </label><input type="text" id="phone" name="phone" value="30210xxxxxxx" maxlength="12" required></p>
+            <p class="p1"><label for="card_num">Αριθμός Πιστωτικής Κάρτας: </label><input type="text" id="card_num" name="card_num" maxlength="16" required></p>
+            <p class="p1"><label for="type_card">Τύπος Πιστωτικής Κάρτας: </label><select id="type_card" name="type_card" required>
+            <option>Mastercard</option>
+            <option>Visa</option>
+            <option>Other</option>
+            </select>
+            </p>
+            <input type="submit" name="button" id="button" value="Αποθήκευση">
+            <input id="reset" type="reset" value="Καθαρισμός στοιχείων">
+            <input id="print" type="button" value="Εκτύπωση" onclick="window.print()">
+            </fieldset>
+        </form>
+        <b id="errors" style="color:red; font-size:25px"></b>
+
+    
+
+
+
+    
+</body>
+</html>
